@@ -4,9 +4,9 @@ function getRandomHexColor() {
 
 const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]');
+const interval = null;
 
 const colorSwitcher = () => {
-  let interval = null;
   document.body.style.backgroundColor = getRandomHexColor();
   interval = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
